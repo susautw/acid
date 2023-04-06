@@ -1,0 +1,29 @@
+name: acid
+description: An accounting app.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.2
+  intl: ^0.18.0
+  json_annotation: ^4.8.0
+  path: ^1.8.2
+  path_provider: ^2.0.14
+  sqflite: ^2.2.6
+  sqflite_common_ffi: ^2.2.2
+
+dev_dependencies:
+  bloc_test: ^9.1.1
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.6.1
+  test: ^1.22.0
+
+flutter:
+  uses-material-design: true
