@@ -8,12 +8,16 @@ import 'database.dart';
 import 'transaction.dart';
 
 void main() {
+  initSqflite();
+  runApp(const AccountingApp());
+}
+
+void initSqflite() {
   if (Platform.isWindows || Platform.isLinux) {
     sqfliteFfiInit();
     // Change the default factory
     databaseFactory = databaseFactoryFfi;
   }
-  runApp(const AccountingApp());
 }
 
 class AccountingApp extends StatelessWidget {
